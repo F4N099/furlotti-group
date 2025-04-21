@@ -67,19 +67,19 @@ const RecyclingCards = () => {
   const cards = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=800&q=80",
+      image: "https://videos.openai.com/vg-assets/assets%2Ftask_01jsc1rrx3fk8r49tm4718gcgc%2Fimg_1.webp?st=2025-04-21T10%3A14%3A20Z&se=2025-04-27T11%3A14%3A20Z&sks=b&skt=2025-04-21T10%3A14%3A20Z&ske=2025-04-27T11%3A14%3A20Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=8ebb0df1-a278-4e2e-9c20-f2d373479b3a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=3QNWwUj0nXouel6uAcKyet4dbUQ1YVMDqb0VTZvAWfo%3D&az=oaivgprodscus",
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1604187351574-c75ca79f5807?w=800&q=80",
+      image: "https://videos.openai.com/vg-assets/assets%2Ftask_01jsc1tk81fcw9fghpjx6ed4rm%2Fimg_1.webp?st=2025-04-21T10%3A12%3A32Z&se=2025-04-27T11%3A12%3A32Z&sks=b&skt=2025-04-21T10%3A12%3A32Z&ske=2025-04-27T11%3A12%3A32Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=8ebb0df1-a278-4e2e-9c20-f2d373479b3a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=fQopfHcW2j1vBY6yTCTHgAjGDxWdU7OsCQG4vSaaKak%3D&az=oaivgprodscus",
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?w=800&q=80",
+      image: "https://videos.openai.com/vg-assets/assets%2Ftask_01jsc2sbyced6tv4cc0prnw15t%2Fimg_0.webp?st=2025-04-21T10%3A14%3A29Z&se=2025-04-27T11%3A14%3A29Z&sks=b&skt=2025-04-21T10%3A14%3A29Z&ske=2025-04-27T11%3A14%3A29Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=8ebb0df1-a278-4e2e-9c20-f2d373479b3a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=qNC5H4l5NF2zo0cnRnm96oz4rXqSxXJR7MFADCwRZeA%3D&az=oaivgprodscus",
     },
     {
       id: 4,
-      image: "https://images.unsplash.com/photo-1526951521990-5d9217cda72e?w=800&q=80",
+      image: "https://videos.openai.com/vg-assets/assets%2Ftask_01jsc21mr9f0m96d4pjd7j163y%2Fimg_1.webp?st=2025-04-21T10%3A14%3A28Z&se=2025-04-27T11%3A14%3A28Z&sks=b&skt=2025-04-21T10%3A14%3A28Z&ske=2025-04-27T11%3A14%3A28Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=8ebb0df1-a278-4e2e-9c20-f2d373479b3a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=ZjO%2FOXgeE8%2BxcBNwXd2edVzLVbz5wuu5J0PCHtb78qE%3D&az=oaivgprodscus",
     }
   ];
 
@@ -143,26 +143,6 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-transparent"></div>
         
         <div className="container relative z-20 max-w-6xl py-40">
-          <motion.div 
-            className="flex justify-center gap-4 mb-8"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          >
-            <div className="icon-box">
-              <Wine size={20} className="text-white" />
-            </div>
-            <div className="icon-box">
-              <Leaf size={20} className="text-white" />
-            </div>
-            <div className="icon-box">
-              <Recycle size={20} className="text-white" />
-            </div>
-            <div className="icon-box">
-              <Factory size={20} className="text-white" />
-            </div>
-          </motion.div>
-
           <motion.h1 
             className="mb-6"
             initial={{ opacity: 0, y: 20 }}

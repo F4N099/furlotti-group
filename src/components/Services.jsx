@@ -30,7 +30,7 @@ const Services = () => {
   ];
 
   return (
-    <section className="bg-[#F5F4EE] py-24">
+    <section className="bg-[#F5F4EE] py-24 md:py-52">
       <div className="container mx-auto px-4">
         <motion.div 
           className="text-center max-w-3xl mx-auto mb-16"

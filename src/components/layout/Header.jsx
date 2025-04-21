@@ -21,31 +21,28 @@ const Header = () => {
       <div className="max-w-7xl mx-auto">
         <nav className="px-6 py-4">
           <div className="flex items-center">
-            <Link href="/" className="relative w-40 h-12 flex-shrink-0">
+            <Link href="/" className="relative w-12 h-12 flex-shrink-0">
               <Image
-                src="https://www.furlottigroup.it/wp-content/uploads/thegem-logos/logo_746bd315be2f74cd38daa9eb05f99c46_2x.png"
-                alt="Furlotti Group Logo"
-                fill
-                style={{ 
-                  objectFit: 'contain',
-                  filter: 'brightness(0) invert(1)'
-                }}
+                src="/images/Furlotti-Logo-Header 1.svg"
+                alt="Furlotti Logo"
+                width={48}
+                height={48}
                 priority
               />
             </Link>
 
             <div className="hidden lg:flex items-center justify-between flex-grow">
-              <div className="flex space-x-8 ml-12">
-                <Link href="/furlotti-vetro" className="text-white hover:opacity-80 transition-colors">
+              <div className="flex space-x-2 ml-8">
+                <Link href="/furlotti-vetro" className="px-4 py-2 text-white rounded-md hover:bg-white/5 transition-colors font-semibold">
                   Furlotti Vetro
                 </Link>
-                <Link href="/furlotti-ambiente" className="text-white hover:opacity-80 transition-colors">
+                <Link href="/furlotti-ambiente" className="px-4 py-2 text-white rounded-md hover:bg-white/5 transition-colors font-semibold">
                   Furlotti Ambiente
                 </Link>
-                <Link href="/mori-recycling" className="text-white hover:opacity-80 transition-colors">
+                <Link href="/mori-recycling" className="px-4 py-2 text-white rounded-md hover:bg-white/5 transition-colors font-semibold">
                   Mori Recycling
                 </Link>
-                <Link href="/furlotti-omnia" className="text-white hover:opacity-80 transition-colors">
+                <Link href="/furlotti-omnia" className="px-4 py-2 text-white rounded-md hover:bg-white/5 transition-colors font-semibold">
                   Furlotti Omnia
                 </Link>
               </div>
@@ -78,28 +75,28 @@ const Header = () => {
             <div className="lg:hidden mt-4 py-4 space-y-4">
               <Link
                 href="/furlotti-vetro"
-                className="block text-white hover:opacity-80 transition-colors"
+                className="block px-4 py-2 text-white rounded-md hover:bg-white/5 transition-colors"
                 onClick={toggleMenu}
               >
                 Furlotti Vetro
               </Link>
               <Link
                 href="/furlotti-ambiente"
-                className="block text-white hover:opacity-80 transition-colors"
+                className="block px-4 py-2 text-white rounded-md hover:bg-white/5 transition-colors"
                 onClick={toggleMenu}
               >
                 Furlotti Ambiente
               </Link>
               <Link
                 href="/mori-recycling"
-                className="block text-white hover:opacity-80 transition-colors"
+                className="block px-4 py-2 text-white rounded-md hover:bg-white/5 transition-colors"
                 onClick={toggleMenu}
               >
                 Mori Recycling
               </Link>
               <Link
                 href="/furlotti-omnia"
-                className="block text-white hover:opacity-80 transition-colors"
+                className="block px-4 py-2 text-white rounded-md hover:bg-white/5 transition-colors"
                 onClick={toggleMenu}
               >
                 Furlotti Omnia

@@ -31,7 +31,7 @@ const WorkWithUs = () => {
   ];
 
   return (
-    <section className="bg-[#1B4B43] text-white py-32 md:py-40">
+    <section className="bg-[#1B4B43] text-white py-40 md:py-52 rounded-b-[48px]">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16">
           {/* Left Column - Title and Description */}
@@ -58,14 +58,10 @@ const WorkWithUs = () => {
 
           {/* Right Column - Cards */}
           <div className="space-y-6">
-            {solutions.map((solution, index) => (
-              <motion.div
+            {solutions.map((solution) => (
+              <div
                 key={solution.id}
-                className="bg-white/80 hover:bg-white rounded-2xl p-6 text-[#1B4B43] transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="bg-white rounded-2xl p-6 text-[#1B4B43] transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-black/5"
               >
                 <div className="flex items-start gap-4">
                   <solution.Icon className="w-8 h-8 text-[#1B4B43] flex-shrink-0" />
@@ -74,7 +70,7 @@ const WorkWithUs = () => {
                     <p className="text-base text-gray-600">{solution.description}</p>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
